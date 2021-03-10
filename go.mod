@@ -1,4 +1,4 @@
-module github.com/thoas/bokchoy
+module github.com/duke-cliff/bokchoy
 
 go 1.13
 

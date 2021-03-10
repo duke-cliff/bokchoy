@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/thoas/bokchoy"
+	"github.com/duke-cliff/bokchoy"
 )
 
 func main() {

@@ -8,7 +8,7 @@ import (
 	"runtime/debug"
 
 	"github.com/pkg/errors"
-	"github.com/thoas/bokchoy"
+	"github.com/duke-cliff/bokchoy"
 )
 
 // Recoverer is a middleware that recovers from panics, logs the panic (and a

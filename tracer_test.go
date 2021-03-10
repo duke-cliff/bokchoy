@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/thoas/bokchoy"
+	"github.com/duke-cliff/bokchoy"
 )
 
 func TestTracer_Error(t *testing.T) {

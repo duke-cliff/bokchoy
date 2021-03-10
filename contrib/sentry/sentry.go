@@ -5,7 +5,7 @@ import (
 
 	"github.com/getsentry/sentry-go"
 
-	"github.com/thoas/bokchoy"
+	"github.com/duke-cliff/bokchoy"
 )
 
 type SentryTracer struct {

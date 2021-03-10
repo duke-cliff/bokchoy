@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/thoas/bokchoy"
-	"github.com/thoas/bokchoy/contrib/rpc/proto"
-	"github.com/thoas/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy"
+	"github.com/duke-cliff/bokchoy/contrib/rpc/proto"
+	"github.com/duke-cliff/bokchoy/logging"
 )
 
 type Handler struct {

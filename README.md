@@ -1,8 +1,8 @@
 # bokchoy
 
 [![Build Status](https://travis-ci.org/thoas/bokchoy.svg?branch=master)](https://travis-ci.org/thoas/bokchoy)
-[![GoDoc](https://godoc.org/github.com/thoas/bokchoy?status.svg)](https://godoc.org/github.com/thoas/bokchoy)
-[![Go report](https://goreportcard.com/badge/github.com/thoas/bokchoy)](https://goreportcard.com/report/github.com/thoas/bokchoy)
+[![GoDoc](https://godoc.org/github.com/duke-cliff/bokchoy?status.svg)](https://godoc.org/github.com/duke-cliff/bokchoy)
+[![Go report](https://goreportcard.com/badge/github.com/duke-cliff/bokchoy)](https://goreportcard.com/report/github.com/duke-cliff/bokchoy)
 
 ## Introduction
 
@@ -50,7 +50,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/thoas/bokchoy"
+	"github.com/duke-cliff/bokchoy"
 )
 
 func main() {
@@ -100,7 +100,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/thoas/bokchoy"
+	"github.com/duke-cliff/bokchoy"
 )
 
 func main() {
@@ -163,7 +163,7 @@ explain how to use the main features of it.
 Using [Go Modules](https://github.com/golang/go/wiki/Modules)
 
 ```console
-go get github.com/thoas/bokchoy
+go get github.com/duke-cliff/bokchoy
 ```
 
 ## Advanced topics
@@ -201,7 +201,7 @@ This task will be published and processed immediately.
 
 By default the task serializer is `JSON`, you can customize it when initializing
 the Bokchoy engine, it must respect the
-[Serializer](https://github.com/thoas/bokchoy/blob/master/serializer.go) interface.
+[Serializer](https://github.com/duke-cliff/bokchoy/blob/master/serializer.go) interface.
 
 ```go
 bokchoy.New(ctx, bokchoy.Config{
@@ -229,7 +229,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/thoas/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy/logging"
 )
 
 func main() {
@@ -449,8 +449,8 @@ is the one that was waiting for more time (the first that blocked for the key).
 
 * Ping me on twitter:
   * [@thoas](https://twitter.com/thoas)
-* Fork the [project](https://github.com/thoas/bokchoy)
-* Fix [bugs](https://github.com/thoas/bokchoy/issues)
+* Fork the [project](https://github.com/duke-cliff/bokchoy)
+* Fix [bugs](https://github.com/duke-cliff/bokchoy/issues)
 
 **Don't hesitate ;)**
 

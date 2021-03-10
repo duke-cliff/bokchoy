@@ -14,9 +14,9 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/thoas/bokchoy"
-	"github.com/thoas/bokchoy/logging"
-	"github.com/thoas/bokchoy/middleware"
+	"github.com/duke-cliff/bokchoy"
+	"github.com/duke-cliff/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy/middleware"
 )
 
 type message struct {

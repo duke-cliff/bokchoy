@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/thoas/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy/logging"
 )
 
 // Broker is the common interface to define a Broker.

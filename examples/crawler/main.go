@@ -8,11 +8,11 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/thoas/bokchoy"
-	"github.com/thoas/bokchoy/examples/crawler/handler"
-	"github.com/thoas/bokchoy/examples/crawler/parser"
-	"github.com/thoas/bokchoy/logging"
-	"github.com/thoas/bokchoy/middleware"
+	"github.com/duke-cliff/bokchoy"
+	"github.com/duke-cliff/bokchoy/examples/crawler/handler"
+	"github.com/duke-cliff/bokchoy/examples/crawler/parser"
+	"github.com/duke-cliff/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy/middleware"
 )
 
 func main() {

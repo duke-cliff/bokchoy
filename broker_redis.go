@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thoas/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy/logging"
 
 	"github.com/go-redis/redis/v7"
 	"github.com/pkg/errors"

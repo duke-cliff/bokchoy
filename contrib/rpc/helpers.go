@@ -3,8 +3,8 @@ package rpc
 import (
 	"time"
 
-	"github.com/thoas/bokchoy"
-	"github.com/thoas/bokchoy/contrib/rpc/proto"
+	"github.com/duke-cliff/bokchoy"
+	"github.com/duke-cliff/bokchoy/contrib/rpc/proto"
 )
 
 func TaskToProto(task *bokchoy.Task) *proto.Task {

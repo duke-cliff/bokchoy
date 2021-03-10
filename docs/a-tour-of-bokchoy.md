@@ -321,13 +321,13 @@ panic: An unexpected error has happened
 
 goroutine 42 [running]:
 main.main.func2(0xc000128200, 0x0, 0x0)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/docs/main.go:109 +0x98
-github.com/thoas/bokchoy.HandlerFunc.Handle(0x1395618, 0xc000128200, 0x0, 0x0)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/handler.go:8 +0x30
-github.com/thoas/bokchoy.(*consumer).handleTask.func1(0xc00017a000, 0xc000128200, 0xc0000aaf40, 0xc0000ae360)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/consumer.go:54 +0x42
-created by github.com/thoas/bokchoy.(*consumer).handleTask
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/consumer.go:53 +0x12e
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/docs/main.go:109 +0x98
+github.com/duke-cliff/bokchoy.HandlerFunc.Handle(0x1395618, 0xc000128200, 0x0, 0x0)
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/handler.go:8 +0x30
+github.com/duke-cliff/bokchoy.(*consumer).handleTask.func1(0xc00017a000, 0xc000128200, 0xc0000aaf40, 0xc0000ae360)
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/consumer.go:54 +0x42
+created by github.com/duke-cliff/bokchoy.(*consumer).handleTask
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/consumer.go:53 +0x12e
 exit status 2
 ```
 
@@ -350,22 +350,22 @@ runtime/debug.Stack(0x28, 0x0, 0x0)
         /usr/local/Cellar/go/1.12.6/libexec/src/runtime/debug/stack.go:24 +0x9d
 runtime/debug.PrintStack()
         /usr/local/Cellar/go/1.12.6/libexec/src/runtime/debug/stack.go:16 +0x22
-github.com/thoas/bokchoy/middleware.Recoverer.func1.1(0xc000150200)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/middleware/recoverer.go:20 +0x150
+github.com/duke-cliff/bokchoy/middleware.Recoverer.func1.1(0xc000150200)
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/middleware/recoverer.go:20 +0x150
 panic(0x12ff540, 0x13ea1f0)
         /usr/local/Cellar/go/1.12.6/libexec/src/runtime/panic.go:522 +0x1b5
 main.main.func2(0xc000150200, 0x20, 0xc000046708)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/docs/main.go:111 +0x98
-github.com/thoas/bokchoy.HandlerFunc.Handle(0x1398de8, 0xc000150200, 0xc000150200, 0xc00010e120)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/handler.go:8 +0x30
-github.com/thoas/bokchoy/middleware.Recoverer.func1(0xc000150200, 0x0, 0x0)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/middleware/recoverer.go:25 +0x7f
-github.com/thoas/bokchoy.HandlerFunc.Handle(0xc00010e120, 0xc000150200, 0x1, 0x13f0c00)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/handler.go:8 +0x30
-github.com/thoas/bokchoy.(*consumer).handleTask.func1(0xc00011e090, 0xc000150200, 0xc000102090, 0xc00008a060)
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/consumer.go:54 +0x75
-created by github.com/thoas/bokchoy.(*consumer).handleTask
-        /Users/thoas/Sites/golang/src/github.com/thoas/bokchoy/consumer.go:53 +0x12e
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/docs/main.go:111 +0x98
+github.com/duke-cliff/bokchoy.HandlerFunc.Handle(0x1398de8, 0xc000150200, 0xc000150200, 0xc00010e120)
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/handler.go:8 +0x30
+github.com/duke-cliff/bokchoy/middleware.Recoverer.func1(0xc000150200, 0x0, 0x0)
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/middleware/recoverer.go:25 +0x7f
+github.com/duke-cliff/bokchoy.HandlerFunc.Handle(0xc00010e120, 0xc000150200, 0x1, 0x13f0c00)
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/handler.go:8 +0x30
+github.com/duke-cliff/bokchoy.(*consumer).handleTask.func1(0xc00011e090, 0xc000150200, 0xc000102090, 0xc00008a060)
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/consumer.go:54 +0x75
+created by github.com/duke-cliff/bokchoy.(*consumer).handleTask
+        /Users/thoas/Sites/golang/src/github.com/duke-cliff/bokchoy/consumer.go:53 +0x12e
 ```
 
 It keeps its state and continue the workflow even after the panic, the task is marked as `failed`
@@ -380,7 +380,7 @@ There are three ways to report an error in Bokchoy, each option can be customize
 
 ### Custom request logger
 
-Bokchoy allows to implement a custom [LogFormatter](https://github.com/thoas/bokchoy/blob/master/middleware/logger.go)
+Bokchoy allows to implement a custom [LogFormatter](https://github.com/duke-cliff/bokchoy/blob/master/middleware/logger.go)
 which follow this interface:
 
 ```go
@@ -401,7 +401,7 @@ if `middleware.Recoverer` is installed as well.
 ### Custom tracer
 
 Internal errors and task errors can be catched by implementing
-a custom [Tracer](https://github.com/thoas/bokchoy/blob/master/tracer.go) and provide it as an option
+a custom [Tracer](https://github.com/duke-cliff/bokchoy/blob/master/tracer.go) and provide it as an option
 when initializing the engine.
 
 The `Tracer` must follow the following interface:
@@ -823,13 +823,13 @@ func (h *crawlHandler) Crawls() []string {
 
 It has been a long tour, if you have reach to the bottom you belong to the brave ☺.
 
-There are multiple others features ([timeout](https://github.com/thoas/bokchoy#timeout),
- [custom logger](https://github.com/thoas/bokchoy#custom-logger),
- [delayed task](https://github.com/thoas/bokchoy#delayed-task), ...)
+There are multiple others features ([timeout](https://github.com/duke-cliff/bokchoy#timeout),
+ [custom logger](https://github.com/duke-cliff/bokchoy#custom-logger),
+ [delayed task](https://github.com/duke-cliff/bokchoy#delayed-task), ...)
 which are not described in this tour, if you are curious enough
-go check the [README](https://github.com/thoas/bokchoy) of the project.
+go check the [README](https://github.com/duke-cliff/bokchoy) of the project.
 
 
 * Ping me on twitter [@thoas](https://twitter.com/thoas)
-* Fork the [project](https://github.com/thoas/bokchoy)
-* Fix [bugs](https://github.com/thoas/bokchoy/issues)
+* Fork the [project](https://github.com/duke-cliff/bokchoy)
+* Fix [bugs](https://github.com/duke-cliff/bokchoy/issues)

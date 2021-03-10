@@ -10,7 +10,7 @@ import (
 	"sync"
 
 	"github.com/go-redis/redis/v7"
-	"github.com/thoas/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy/logging"
 	"github.com/thoas/go-funk"
 
 	"github.com/pkg/errors"

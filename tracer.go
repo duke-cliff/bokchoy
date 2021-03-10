@@ -3,7 +3,7 @@ package bokchoy
 import (
 	"context"
 
-	"github.com/thoas/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy/logging"
 )
 
 // DefaultTracer is the default tracer.

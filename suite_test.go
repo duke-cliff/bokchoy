@@ -5,9 +5,9 @@ import (
 	"log"
 	"testing"
 
-	"github.com/thoas/bokchoy"
-	"github.com/thoas/bokchoy/logging"
-	"github.com/thoas/bokchoy/middleware"
+	"github.com/duke-cliff/bokchoy"
+	"github.com/duke-cliff/bokchoy/logging"
+	"github.com/duke-cliff/bokchoy/middleware"
 )
 
 type suiteServer struct {
